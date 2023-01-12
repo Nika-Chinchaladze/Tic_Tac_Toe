@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Against Human</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/e4767c28d7.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/human.css">
+</head>
+  <body>
+
+    <!-- MAIN DIV FOR GAME -->
+    <div class="mainDiv">
+        <!-- Toggle Section -->
+        <div class="toggleDiv d-flex justify-content-center align-items-center mb-1">
+            <i class="fa-solid fa-xmark d-inline-block me-3 myX"></i>
+            <label class="switch">
+                <input type="checkbox" class="chooseSide">
+                <span class="slider round"></span>
+            </label>
+            <i class="fa-solid fa-o d-inline-block ms-3 myO"></i>
+        </div>
+        <!-- Top Section -->
+        <div class="controlDiv d-flex justify-content-between align-items-center">
+            <div class="iconsDiv d-flex justify-content-center align-items-center">
+                <button class="myRules"><i class="fa-solid fa-pen-ruler"></i></button>
+            </div>
+            <div class="turnDiv d-flex justify-content-around align-items-center">
+                <span class="whoMove me-1">X</span>
+                <span class="ms-1">TURN</span>
+            </div>
+            <button class="d-flex justify-content-center align-items-center againButton"><i class="fa-solid fa-arrow-rotate-right myAgain"></i></button>
+        </div>
+        <!-- Playground Section -->
+        <div class="firstRow d-flex justify-content-between align-items-center">
+            <div class="a squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="b squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="c squareDiv d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="firstRow d-flex justify-content-between align-items-center">
+            <div class="d squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="e squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="f squareDiv d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="firstRow d-flex justify-content-between align-items-center">
+            <div class="g squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="h squareDiv d-flex justify-content-center align-items-center"></div>
+            <div class="k squareDiv d-flex justify-content-center align-items-center"></div>
+        </div>
+        <!-- Result Section -->
+        <div class="resultDiv d-flex justify-content-between align-items-center mt-3">
+            <div class="meDiv d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 p-0 phead">ME <span class="whoAmI fw-bold">(X)</span></p>
+                <p class="m-0 p-0 fw-bold pfoot myScore">0</p>
+            </div>
+            <div class="tieDiv d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 p-0 phead">TIES</p>
+                <p class="m-0 p-0 fw-bold pfoot tieScore">0</p>
+            </div>
+            <div class="opponentDiv d-flex flex-column justify-content-center align-items-center">
+                <p class="m-0 p-0 phead">OPP <span class="whoIsHe fw-bold">(O)</span></p>
+                <p class="m-0 p-0 fw-bold pfoot oppScore">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FINAL RESULT DIV  -->
+    <div class="finalAnswerDiv">
+        <h5 class="fw-bold mt-5">GAME IS OVER</h5>
+        <h1 class="gameResult d-flex justify-content-center align-items-center mt-5 mb-5">Chincharito</h1>
+        <div><button class="nextButton fw-bold mb-3">NEXT ROUND</button></div>
+        <div><button class="quitButton fw-bold">QUIT</button></div>
+    </div>
+
+    <!-- QUIT DIV  -->
+    <div class="quitedDiv">
+        <h3>thanks for being with us</h3>
+        <h4>if you change your mind</h4>
+        <h1 class="refreshAnime fw-bold">REFRESH</h1>
+        <h4 class="pageH">The Page</h4>
+    </div>
+
+    <!-- GAME RULES -->
+    <div class="gameRules">
+        <h1 class="text-center">How To Play</h1>
+        <ul>
+            <li>Each person takes a turn and draws their symbol in one of the empty squares.</li>
+            <li>Don't draw your symbol in a square that is already filled.</li>
+            <li>Once you place your mark, you can't take it back.</li>
+            <li>You have to make straight line: Horizontally, Vertically, Diagonally.</li>
+            <li>If noone will be able to make straight line, then it's Tie.</li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- My Javascript -->
+    <script src="js/human.js"></script>
+</body>
+</html>
