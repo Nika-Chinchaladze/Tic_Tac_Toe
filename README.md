@@ -1,4 +1,11 @@
 # Tic Tac Toe
+<p>Player has two options:</p>
+<p>&nbsp;a) Play against Computer</p>
+<p>&nbsp;b) Play against Human</p>
+<p>When Player is against Computer - Cumputer uses it's own Strategy and it's moves is not based on random decisions.</p>
+
+<a href="https://nika-chinchaladze.github.io/Tic_Tac_Toe/">Play Tic Tac Toe Game Online</a>
+<a href="https://www.youtube.com/watch?v=CxsRGONZlZI">Watch video on my youtube channel</a>
 
 # App
 ![first](https://user-images.githubusercontent.com/106172218/212108129-9a2d5b72-efce-456a-8759-27e9822cd839.jpg)
