@@ -1,0 +1,112 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100vh;
+    background-color: #0A2647;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: wheat;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 6px 4px 5px #424547;
+}
+h3 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px #645353, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+/* CONCRETE STYLES */
+.optionDiv {
+    box-sizing: border-box;
+    padding: 30px 0;
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid #153253;
+    box-shadow: 0px 17px 38px 14px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 0px 17px 38px 14px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 17px 38px 14px rgba(0,0,0,0.89);
+}
+
+.computerLink {
+    width: 80%;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background: linear-gradient(to bottom, #db7972 5%, #c62d1f 100%);
+	background-color:#db7972;
+	border-radius: 15px;
+	border: 1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:2rem;
+	font-weight:bold;
+	padding: 6px 24px;
+	text-decoration:none;
+	text-shadow: 0px 1px 0px #810e05;
+}
+.computerLink:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #db7972 100%);
+	background-color:#c62d1f;
+}
+.computerLink:active {
+	position:relative;
+	top:2px;
+}
+
+.humanLink {
+    width: 80%;
+	box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+	background:linear-gradient(to bottom, #072354 5%, #476e9e 100%);
+	background-color:#072354;
+	border-radius: 15px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 2rem;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.humanLink:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #072354 100%);
+	background-color:#476e9e;
+}
+.humanLink:active {
+	position:relative;
+	top:2px;
+}
+
+/* Media Query For Ipad */
+@media (max-width: 820px) {
+	.optionDiv {
+		width: 80%;
+	}
+}
+
+/* Media Query For Smartphone */
+@media (max-width: 576px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	.optionDiv {
+		width: 90%;
+	}
+}
